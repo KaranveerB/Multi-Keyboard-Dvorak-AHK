@@ -17,7 +17,8 @@ Go to Language settings (in Windows Settings) and set any one language's keyboar
 
 ## Credit
 [Original project](https://gist.github.com/troynt/205106) by [troynt](https://github.com/troynt).
-Note that the project was indirectly forked from a git gist to a git repo.
+Note that the project was indirectly forked from the original git gist 
+to this git repo.
 
 ## Warning
 May not function properly on pre-Windows 10 versions as the DLL call may be different.

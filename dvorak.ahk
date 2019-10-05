@@ -11,16 +11,18 @@ LANGUAGE_CODE := 1033
 
 LWin::
 	Suspend, Permit
-	Send {LWin down}
-	keyWait, LWin
-	Send {LWin up}
-	Sleep, 1 ; Allow DLL reference to update
-	klCode := getActiveKL()
-	if (klCode = LANGUAGE_CODE) {
-		Suspend, Off
-	} else {
-		Suspend, On
+	while GetKeystate(LWin, "p") {
+		Send {LWin down}
+		Sleep, 50
 	}
+	Send {LWin up}
+	;Sleep, 1 ; Allow DLL reference to update
+	;klCode := getActiveKL()
+	;if (klCode = LANGUAGE_CODE) {
+	;	Suspend, Off
+	;} else {
+	;	Suspend, On
+	;}
 	
 getActiveKL() {
 	active_hwnd := WinExist("A")
@@ -28,12 +30,10 @@ getActiveKL() {
 	klCode := dllCall("GetKeyboardLayout", "uint", threadID, "uint") & 0xFFFF
 	return klCode
 }
-
-
 ;----------------- CTRL KEY
 
-*^[::Send ^-
 *^]::Send ^=
+*^[::Send ^-
 
 *^'::Send ^q
 *^,::Send ^w

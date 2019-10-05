@@ -16,7 +16,7 @@ Go to Language settings (in Windows Settings) and set any one language's keyboar
 (Optional) Set the script to run on startup by adding a shortcut to file to "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
 
 ## Credit
-[Original project](https://gist.github.com/troynt/205106) by [troynt](https://github.com/troynt)
+[Original project](https://gist.github.com/troynt/205106) by [troynt](https://github.com/troynt).
 Note that the project was indirectly forked from a git gist to a git repo.
 
 ## Warning

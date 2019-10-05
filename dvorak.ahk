@@ -16,13 +16,13 @@ LWin::
 		Sleep, 50
 	}
 	Send {LWin up}
-	;Sleep, 1 ; Allow DLL reference to update
-	;klCode := getActiveKL()
-	;if (klCode = LANGUAGE_CODE) {
-	;	Suspend, Off
-	;} else {
-	;	Suspend, On
-	;}
+	Sleep, 1 ; Allow DLL reference to update
+	klCode := getActiveKL()
+	if (klCode = LANGUAGE_CODE) {
+		Suspend, Off
+	} else {
+		Suspend, On
+	}
 	
 getActiveKL() {
 	active_hwnd := WinExist("A")

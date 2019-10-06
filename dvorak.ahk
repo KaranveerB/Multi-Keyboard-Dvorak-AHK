@@ -3,13 +3,22 @@
 ;# Warn
 ;	=Dvorak Hot Key Fixes ( Autohotkey )
 ;--------------------------------------
-;----------------- LANG CONTROL
 
-LANGUAGE_CODE := 1033
+;------------------ ENTRY POINT
+LANGUAGE_CODE := 1033 ; SET THIS VALUE IF NEEDED
 ; Language code for Dvorak
 ; 4105 = CA, 1033 = US, 2057 = UK
 ; See README for more details
 
+; Set initial state
+klCode := getActiveKL()
+if (klCode = LANGUAGE_CODE) {
+	Suspend, Off
+} else {
+	Suspend, On
+}
+
+;----------------- LANG CONTROL
 LWin::
 	Suspend, Permit
 	Send {LWin down}
@@ -23,6 +32,10 @@ LWin::
 		Suspend, On
 	}
 return
+
+suspendCheck() {
+	
+}
 
 getActiveKL() {
 	active_hwnd := WinExist("A")

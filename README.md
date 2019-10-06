@@ -11,7 +11,7 @@ Go to Language settings (in Windows Settings) and set any one language's keyboar
 
 (Optional) Set default layout by bringing a language to the top of list. Alternatively, search for "Override for default input methods" and change "Use langauge list" to desired language (this method prevents system language changes).
 
-(Skip if using US for Dvorak) In dvorak.ahk, set "LANGUAGE_CODE" (line 7) to the corresponding language code in decimal ([Language codes](https://www.autohotkey.com/docs/misc/Languages.htm). Use hex to dec convertor).
+(Skip if using US for Dvorak) In dvorak.ahk, set "LANGUAGE_CODE" to the corresponding language code in decimal ([Language codes](https://www.autohotkey.com/docs/misc/Languages.htm). Use hex to dec convertor).
 
 (Optional) Set the script to run on startup by adding a shortcut to file to "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
 

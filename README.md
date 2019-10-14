@@ -7,17 +7,17 @@ An AutoHotkey script that allows for the use of QWERTY hotkeys on a Dvorak layou
 [AutoHotkey](https://www.autohotkey.com/) ([DDL](https://www.autohotkey.com/download/ahk-install.exe))
 
 ## Setup
-Go to Language settings (in Windows Settings) and set any one language's keyboard layouts to be Dvorak only.
+1. Go to Language settings (in Windows Settings) and set any one language's keyboard layouts to be Dvorak only (Can be any language, but required to use language specified when using an exe).
 
-(Optional) Set default layout by bringing a language to the top of list. Alternatively, search for "Override for default input methods" and change "Use langauge list" to desired language (this method prevents system language changes).
+2. (Optional) Set default layout by bringing a language to the top of list. Alternatively, search for "Override for default input methods" and change "Use langauge list" to desired language (this method prevents system language changes).
 
-(Skip if using US for Dvorak) In dvorak.ahk, set "LANGUAGE_CODE" to the corresponding language code in decimal ([Language codes](https://www.autohotkey.com/docs/misc/Languages.htm). Use hex to dec convertor).
+3. (Skip if using US for Dvorak or a provided exe) In dvorak.ahk, set "LANGUAGE_CODE" to the corresponding language code in decimal ([Language codes](https://www.autohotkey.com/docs/misc/Languages.htm). Use hex to dec convertor).
 
-(Optional) Set the script to run on startup by adding a shortcut to file to "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
+4. (Optional) Set the script to run on startup by adding a shortcut to file in "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
 
 ## Credit
 [Original project](https://gist.github.com/troynt/205106) by [troynt](https://github.com/troynt).
-Note that the project was indirectly forked from the original git gist 
+Note that the project was indirectly forked from the original git gist
 to this git repo.
 
 ## Warning

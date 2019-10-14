@@ -17,7 +17,7 @@ An AutoHotkey script that allows for the use of QWERTY hotkeys on a Dvorak layou
 
 ## Credit
 [Original project](https://gist.github.com/troynt/205106) by [troynt](https://github.com/troynt).
-Note that the project was indirectly forked from the original git gist
+Note that this project was indirectly forked from the original git gist
 to this git repo.
 
 ## Warning

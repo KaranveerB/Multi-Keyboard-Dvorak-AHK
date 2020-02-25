@@ -13,12 +13,12 @@ An AutoHotkey script that allows for the use of QWERTY hotkeys on a Dvorak layou
 
 3. (Skip if using US for Dvorak or a provided exe) In dvorak.ahk, set "LANGUAGE_CODE" to the corresponding language code in decimal ([Language codes](https://www.autohotkey.com/docs/misc/Languages.htm). Use hex to dec convertor).
 
-4. (Optional) Set the script to run on startup by adding a shortcut to file in "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
+4. (Optional) Set the script to run on startup by adding a shortcut to file in "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup" or by running it on startup with Task Scheduler.
 
 ## Credit
-[Original project](https://gist.github.com/troynt/205106) by [troynt](https://github.com/troynt).
-Note that this project was indirectly forked from the original git gist
+[Original project](https://gist.github.com/troynt/205106) by [troynt](https://github.com/troynt) (contains codes for interpreting dvorak hotkeys as qwerty hotkeys).
+Note that this project was indirectly forked from the linked git gist
 to this git repo.
 
 ## Warning
-May not function properly on pre-Windows 10 versions as the DLL call may be different.
+May not function properly on pre-Windows 10 versions as the DLL call may be different. Currently untested.
